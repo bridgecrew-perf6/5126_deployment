@@ -28,7 +28,7 @@ class MultiPage:
         st.sidebar.title('Navigation')
         selection = st.sidebar.radio("Go to", list(self.pages.keys()))
         page = self.pages[selection]
-        #page.app()
+        page()
         
         
         # run the app function 

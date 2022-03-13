@@ -27,6 +27,7 @@ def introduction():
 def test():
     st.write("Page loaded")
 
+introduction()
 app.add_page("page1",test)
 app.add_page("page2",test)
 app.add_page("page3",test)
