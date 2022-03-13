@@ -1,15 +1,20 @@
 import streamlit as st
+import collections
 
 class MultiPage: 
     def __init__(self) -> None:
-        self.pages = []
+        self.pages = collections.defaultdict()
     
-    def add_page(self, title, func) -> None: 
+    def add_page(self, title, func) -> None:
+        """
         self.pages.append({ 
                 "title": title, 
                 "function": func
             })
-
+        """
+        
+        self.pages[title] = func
+        
     def run(self):
         # Drodown to select the page to run
         """
