@@ -15,6 +15,15 @@ st.set_page_config(
 
 app = MultiPage()
 
+def introduction():
+    st.title("**HDB Resale price analysis**")
+    st.subheader(
+        """
+        Group - 20
+        """
+    )
+
+
 def test():
     st.write("Page loaded")
 
