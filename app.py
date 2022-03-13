@@ -23,3 +23,5 @@ app.add_page("page2",test)
 app.add_page("page3",test)
 app.add_page("page4",test)
 app.add_page("page5",test)
+
+app.run()
