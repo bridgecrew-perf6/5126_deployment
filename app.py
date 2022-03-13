@@ -14,3 +14,12 @@ st.set_page_config(
  )
 
 app = MultiPage()
+
+def test():
+    st.write("Page loaded")
+
+app.add_page("page1",test)
+app.add_page("page2",test)
+app.add_page("page3",test)
+app.add_page("page4",test)
+app.add_page("page5",test)

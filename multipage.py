@@ -11,12 +11,22 @@ class MultiPage:
             })
 
     def run(self):
-        # Drodown to select the page to run  
+        # Drodown to select the page to run
+        """
         page = st.sidebar.selectbox(
             'App Navigation', 
             self.pages, 
             format_func=lambda page: page['title']
         )
-
+        """
+        
+        st.sidebar.title('Navigation')
+        selection = st.sidebar.radio("Go to", list(self.pages.keys()))
+        page = self.pages[selection]
+        page.app()
+        
+        
         # run the app function 
-        page['function']()
+        #page['function']()
+        
+        
